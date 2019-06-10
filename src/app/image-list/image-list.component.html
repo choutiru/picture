@@ -1,0 +1,5 @@
+<input #searchQuery>
+<button (click)="searchImages(searchQuery.value)" type="button">Find Images</button>
+<div *ngFor='let image of images'>
+  <img [src]=image.webformatURL>
+</div>
